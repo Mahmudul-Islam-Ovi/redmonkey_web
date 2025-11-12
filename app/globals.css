@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #000;
+  --muted: #6b6b6b;
+  --accent: #ff7a18;
+}
+
+body {
+  @apply bg-black text-white font-display;
+}
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+.card {
+  @apply bg-gray-900 rounded-lg overflow-hidden shadow-lg;
+}
+.btn {
+  @apply inline-block px-4 py-2 rounded-md bg-orange-600 text-black font-semibold;
+}

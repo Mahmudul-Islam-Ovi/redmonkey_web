@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Animation",
+    "image": "/images/hero.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Motion Graphic",
+    "image": "/images/hero.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Illustration",
+    "image": "/images/hero.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Character Design",
+    "image": "/images/hero.jpg"
+  }
+]

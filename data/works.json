@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Folk Story Animation",
+    "thumbnail": "/images/hero.jpg",
+    "type": "2D Animated Video",
+    "client": "Client Name Here"
+  },
+  {
+    "id": 2,
+    "title": "Village Tales",
+    "thumbnail": "/images/hero.jpg",
+    "type": "2D Animated Video",
+    "client": "Client Name Here"
+  },
+  {
+    "id": 3,
+    "title": "Character Short",
+    "thumbnail": "/images/hero.jpg",
+    "type": "2D Animated Video",
+    "client": "Client Name Here"
+  },
+  {
+    "id": 4,
+    "title": "Festival Special",
+    "thumbnail": "/images/hero.jpg",
+    "type": "2D Animated Video",
+    "client": "Client Name Here"
+  },
+  {
+    "id": 5,
+    "title": "Moral Lesson",
+    "thumbnail": "/images/hero.jpg",
+    "type": "2D Animated Video",
+    "client": "Client Name Here"
+  },
+  {
+    "id": 6,
+    "title": "Mini Series Ep1",
+    "thumbnail": "/images/hero.jpg",
+    "type": "2D Animated Video",
+    "client": "Client Name Here"
+  }
+]

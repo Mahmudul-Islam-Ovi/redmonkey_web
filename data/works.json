@@ -2,43 +2,49 @@
   {
     "id": 1,
     "title": "Folk Story Animation",
-    "thumbnail": "/images/hero.jpg",
+    "thumbnail": "/images/thambalin.png",
     "type": "2D Animated Video",
-    "client": "Client Name Here"
+    "client": "Client Name Here",
+    "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
     "id": 2,
     "title": "Village Tales",
-    "thumbnail": "/images/hero.jpg",
+    "thumbnail": "/images/thambalin.png",
     "type": "2D Animated Video",
-    "client": "Client Name Here"
+    "client": "Client Name Here",
+    "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
     "id": 3,
     "title": "Character Short",
-    "thumbnail": "/images/hero.jpg",
+    "thumbnail": "/images/thambalin.png",
     "type": "2D Animated Video",
-    "client": "Client Name Here"
+    "client": "Client Name Here",
+    "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
     "id": 4,
     "title": "Festival Special",
-    "thumbnail": "/images/hero.jpg",
+    "thumbnail": "/images/thambalin.png",
     "type": "2D Animated Video",
-    "client": "Client Name Here"
+    "client": "Client Name Here",
+     "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
     "id": 5,
     "title": "Moral Lesson",
-    "thumbnail": "/images/hero.jpg",
+    "thumbnail": "/images/thambalin.png",
     "type": "2D Animated Video",
-    "client": "Client Name Here"
+    "client": "Client Name Here",
+     "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
     "id": 6,
     "title": "Mini Series Ep1",
-    "thumbnail": "/images/hero.jpg",
+    "thumbnail": "/images/thambalin.png",
     "type": "2D Animated Video",
-    "client": "Client Name Here"
+    "client": "Client Name Here",
+     "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   }
 ]

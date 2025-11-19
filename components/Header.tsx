@@ -22,9 +22,9 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt="RedMonkey Logo"
-            width={40}
-            height={40}
-            className="flex-shrink-0"
+            width={50}
+            height={50}
+            className="flex-shrink-0 rounded-full"
           />
         </Link>
 

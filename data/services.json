@@ -2,21 +2,57 @@
   {
     "id": 1,
     "name": "Animation",
+    "title": "Animation",
+    "description": "Creating captivating animations that bring stories to life through motion and creativity.",
     "image": "/images/thambalin.png"
   },
   {
     "id": 2,
     "name": "Motion Graphic",
+    "title": "Motion Graphic",
+    "description": "Designing dynamic motion graphics that enhance visual storytelling and engage audiences.",
     "image": "/images/thambalin.png"
   },
   {
     "id": 3,
     "name": "Illustration",
+    "title": "Illustration",
+    "description": "Crafting unique illustrations that communicate ideas and evoke emotions through art.",
     "image": "/images/thambalin.png"
   },
   {
     "id": 4,
     "name": "Character Design",
+    "title": "Character Design",
+    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
+    "image": "/images/thambalin.png"
+  },
+  {
+    "id": 5,
+    "name": "Character Design 2 ",
+    "title": "Character Design 2",
+    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
+    "image": "/images/thambalin.png"
+  },
+  {
+    "id": 6,
+    "name": "Character Design 3",
+    "title": "Character Design 3",
+    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
+    "image": "/images/thambalin.png"
+  },
+  {
+    "id": 7,
+    "name": "Character Design 4",
+    "title": "Character Design 4",
+    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
+    "image": "/images/thambalin.png"
+  },
+  {
+    "id": 8,
+    "name": "Character Design 5",
+    "title": "Character Design 5",
+    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
     "image": "/images/thambalin.png"
   }
 ]

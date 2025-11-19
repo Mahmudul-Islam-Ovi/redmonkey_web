@@ -1,22 +1,23 @@
+"use client";
+
 import "./globals.css";
 import { ReactNode } from "react";
+import { usePathname } from "next/navigation";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 import Footer from "../components/Footer";
-
-export const metadata = {
-  title: "RedMonkey — Animator Portfolio",
-  description: "Where Bangla Stories Come Alive",
-};
+import Hero from "../components/Hero";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+  const isLoginPage = pathname === "/login";
+
   return (
     <html lang="en">
       <body>
-        <Header />
-        <Hero />
+        {!isLoginPage && <Header />}
+        {!isLoginPage && <Hero />}
         {children}
-        <Footer />
+        {!isLoginPage && <Footer />}
       </body>
     </html>
   );

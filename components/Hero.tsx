@@ -2,13 +2,13 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images//background.jpg"
+          src="/images/BG 1.jpg"
           alt="Hero Background"
-          className="w-full h-full object-cover blur-sm"
+          className="w-full h-full object-cover md:object-fill blur-[2px]"
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>

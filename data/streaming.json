@@ -16,5 +16,23 @@
     "title": "Hujip Episode 3",
     "duration": "12:11",
     "thumbnail": "/images/thambalin.png"
+  },
+  {
+    "id": 4,
+    "title": "Hujip Episode 4",
+    "duration": "12:50",
+    "thumbnail": "/images/thambalin.png"
+  },
+  {
+    "id": 5,
+    "title": "Hujip Episode 5",
+    "duration": "12:20",
+    "thumbnail": "/images/thambalin.png"
+  },
+  {
+    "id": 6,
+    "title": "Hujip Episode 6",
+    "duration": "12:30",
+    "thumbnail": "/images/thambalin.png"
   }
 ]

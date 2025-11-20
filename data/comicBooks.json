@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 1.png",
+      "/images/Comic Book 2.png",
+      "/images/Comic Book 3.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 1.png",
+      "/images/Comic Book 2.png",
+      "/images/Comic Book 3.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 1.png",
+      "/images/Comic Book 2.png",
+      "/images/Comic Book 3.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 1.png",
+      "/images/Comic Book 2.png",
+      "/images/Comic Book 3.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 1.png",
+      "/images/Comic Book 2.png",
+      "/images/Comic Book 3.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 2.png",
+      "/images/Comic Book 2.png",
+      "/images/Comic Book 2.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 3.png",
+      "/images/Comic Book 3.png",
+      "/images/Comic Book 3.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Cactus Activity Pages",
+    "description": "An engaging comic activity book featuring cactus characters",
+    "specs": "8.5\" x 11\" Inch, 24 pages, PDF",
+    "pages": [
+      "/images/Comic Book 4.png",
+      "/images/Comic Book 4.png",
+      "/images/Comic Book 4.png"
+    ]
+  }
+
+]

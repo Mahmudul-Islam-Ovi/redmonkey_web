@@ -46,5 +46,29 @@
     "type": "2D Animated Video",
     "client": "Client Name Here",
      "link": "https://www.youtube.com/watch?v=uBKPC3vxilY"
+  },
+  {
+    "id": 7,
+    "title": "Folk Story Animation",
+    "thumbnail": "/images/thambalin.png",
+    "type": "2D Animated Video",
+    "client": "Client Name Here",
+    "link": "https://www.youtube.com/watch?v=uBKPC3vxilY"
+  },
+  {
+    "id": 8,
+    "title": "Village Tales",
+    "thumbnail": "/images/thambalin.png",
+    "type": "2D Animated Video",
+    "client": "Client Name Here",
+    "link": "https://www.youtube.com/watch?v=uBKPC3vxilY"
+  },
+  {
+    "id": 9,
+    "title": "Character Short",
+    "thumbnail": "/images/thambalin.png",
+    "type": "2D Animated Video",
+    "client": "Client Name Here",
+    "link": "https://www.youtube.com/watch?v=uBKPC3vxilY"
   }
 ]

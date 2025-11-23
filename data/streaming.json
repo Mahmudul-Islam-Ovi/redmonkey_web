@@ -1,38 +1,65 @@
 [
   {
     "id": 1,
-    "title": "Hujip Episode 1",
-    "duration": "12:34",
-    "thumbnail": "/images/thambalin.png"
+    "title": "শ্মশান ঘাটের আতঙ্ক",
+    "duration": "12:14",
+    "thumbnail": "/images/Steaming Thumbnail/TH-1.jpg",
+    "link":"https://www.youtube.com/watch?v=2wkxEe5CznE"
   },
   {
     "id": 2,
-    "title": "Hujip Episode 2",
-    "duration": "12:45",
-    "thumbnail": "/images/thambalin.png"
+    "title": "শ্মশান ঘাটের মাঝি",
+    "duration": "15:00",
+    "thumbnail": "/images/Steaming Thumbnail/TH-2.jpg",
+    "link":"https://www.youtube.com/watch?v=NlpqBuhMK3w"
   },
   {
     "id": 3,
-    "title": "Hujip Episode 3",
-    "duration": "12:11",
-    "thumbnail": "/images/thambalin.png"
+    "title": "Bengali Mystery cartoon Story",
+    "duration": "16:10",
+    "thumbnail": "/images/Steaming Thumbnail/TH-3.jpg",
+    "link":"https://www.youtube.com/watch?v=Iem-G3FIH0U"
   },
   {
     "id": 4,
-    "title": "Hujip Episode 4",
-    "duration": "12:50",
-    "thumbnail": "/images/thambalin.png"
+    "title": "গেস্টহাউজের ভয়াল রাত",
+    "duration": "17:48",
+    "thumbnail": "/images/Steaming Thumbnail/TH-4.jpg",
+    "link":"https://www.youtube.com/watch?v=4MM6LyhT8yk"
   },
   {
     "id": 5,
-    "title": "Hujip Episode 5",
-    "duration": "12:20",
-    "thumbnail": "/images/thambalin.png"
+    "title": "ঝড়ের রাতে পুরনো বন্ধুর বাড়ি",
+    "duration": "15:00",
+    "thumbnail": "/images/Steaming Thumbnail/TH-5.jpg",
+    "link":"https://www.youtube.com/watch?v=UDNmZgn443M"
   },
   {
     "id": 6,
-    "title": "Hujip Episode 6",
-    "duration": "12:30",
-    "thumbnail": "/images/thambalin.png"
+    "title": "চায়ের দোকানের সেই রাত",
+    "duration": "12:34",
+    "thumbnail": "/images/Steaming Thumbnail/TH-6.jpg",
+    "link":"https://www.youtube.com/watch?v=2bI7UIzbhkQ"
+  },
+  {
+    "id": 7,
+    "title": "ঠেলা গাড়ির শেষ যাত্রী",
+    "duration": "12:17",
+    "thumbnail": "/images/Steaming Thumbnail/TH-7.jpg",
+    "link":"https://www.youtube.com/watch?v=-nwJHbvyB8k"
+  },
+  {
+    "id": 8,
+    "title": "শ্মশানঘাটের সেই রাত",
+    "duration": "11:41",
+    "thumbnail": "/images/Steaming Thumbnail/TH-8.jpg",
+    "link":"https://www.youtube.com/watch?v=-o7T6ySg3yA"
+  },
+  {
+    "id": 9,
+    "title": "তালপুকুরের প্রেত",
+    "duration": "14:01",
+    "thumbnail": "/images/Steaming Thumbnail/TH-9.jpg",
+    "link":"https://www.youtube.com/watch?v=iPS2-g7s_eg"
   }
 ]

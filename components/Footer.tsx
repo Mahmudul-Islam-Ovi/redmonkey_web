@@ -23,11 +23,10 @@ const Footer = () => {
               <Image
                 src="/images/logo.png"
                 alt="RedMonkey Logo"
-                width={40}
-                height={40}
+                width={120}
+                height={120}
                 className="flex-shrink-0"
               />
-              <span className="text-lg font-bold">SR</span>
             </div>
             <p className="text-gray-400 text-sm">
               Original Bangla animation & comics.

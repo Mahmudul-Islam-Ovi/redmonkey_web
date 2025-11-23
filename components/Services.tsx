@@ -13,7 +13,7 @@ export default function Services() {
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((s: any) => (
           <Link href={`/services/${s.id}`} key={s.id}>
             <div className="group card h-full p-0 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-orange-600/20">

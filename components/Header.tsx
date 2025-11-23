@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Button from "./Button";
@@ -9,6 +9,32 @@ import Button from "./Button";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    // Update cart count on mount and when storage changes
+    const updateCartCount = () => {
+      const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+      const count = cart.reduce(
+        (total: number, item: any) => total + item.quantity,
+        0
+      );
+      setCartCount(count);
+    };
+
+    updateCartCount();
+
+    // Listen for storage changes
+    window.addEventListener("storage", updateCartCount);
+
+    // Custom event listener for local updates
+    window.addEventListener("cartUpdated", updateCartCount);
+
+    return () => {
+      window.removeEventListener("storage", updateCartCount);
+      window.removeEventListener("cartUpdated", updateCartCount);
+    };
+  }, []);
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -22,9 +48,9 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt="RedMonkey Logo"
-            width={50}
-            height={50}
-            className="flex-shrink-0 rounded-full"
+            width={100}
+            height={100}
+            className="flex-shrink-0 "
           />
         </Link>
 
@@ -65,8 +91,20 @@ export default function Header() {
           </Button>
         </nav>
 
-        {/* Desktop Login */}
-        <div className="hidden md:block">
+        {/* Desktop Right Section */}
+        <div className="hidden md:flex items-center gap-4">
+          {/* Cart Icon */}
+          <Link
+            href="/cart"
+            className="relative text-white hover:text-orange-500 transition text-2xl"
+          >
+            🛒
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-orange-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                {cartCount}
+              </span>
+            )}
+          </Link>
           <Button href="/login" variant="primary">
             Login
           </Button>
@@ -133,6 +171,12 @@ export default function Header() {
             >
               Contact
             </Button>
+            <Link
+              href="/cart"
+              className="text-white hover:text-orange-500 transition py-2"
+            >
+              🛒 Cart ({cartCount})
+            </Link>
             <Button
               href="/login"
               variant="primary"

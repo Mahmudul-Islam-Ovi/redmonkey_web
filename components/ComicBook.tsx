@@ -23,7 +23,7 @@ export default function ComicBook() {
                 {/* Comic Image */}
                 <div className="relative h-full">
                   <img
-                    src={comic.pages[0]}
+                    src={comic.thumbnail}
                     alt={comic.title}
                     className="w-full h-full object-full group-hover:scale-105 transition-transform duration-500"
                   />

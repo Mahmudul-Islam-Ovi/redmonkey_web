@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="mt-8">
             <a
               className="btn btn-primary inline-block px-8 py-3 bg-orange-600 hover:bg-orange-700 rounded transition"
-              href="#work"
+              href="/works"
             >
               See Our Work
             </a>
@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="md:w-1/2">
           <div className="card overflow-hidden shadow-2xl">
             <video
-              src="https://commondatastorage.googleapis.com/gtv-videos-library/sample/BigBuckBunny.mp4"
+              src="/Video/Intro Video.mp4"
               className="w-full h-full object-cover"
               controls
               autoPlay

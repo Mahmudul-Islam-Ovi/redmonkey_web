@@ -38,7 +38,7 @@ export default function LoginPage() {
             alt="RedMonkey Logo"
             width={120}
             height={120}
-            className="mx-auto mb-2 rounded-full"
+            className="mx-auto mb-2 "
           />
           <p className="text-gray-400">Where Bangla Stories Come Alive</p>
         </div>

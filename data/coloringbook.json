@@ -8,7 +8,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "purple",
-    "thumbnail": "/images/colouring book1.png"
+    "thumbnail": "/images/colouring book1.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "red",
-    "thumbnail": "/images/colouring book2.png"
+    "thumbnail": "/images/colouring book2.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-1",
     "color": "green",
-    "thumbnail": "/images/colouring book3.png"
+    "thumbnail": "/images/colouring book3.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "purple",
-    "thumbnail": "/images/colouring book1.png"
+    "thumbnail": "/images/colouring book1.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "red",
-    "thumbnail": "/images/colouring book2.png"
+    "thumbnail": "/images/colouring book2.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-1",
     "color": "green",
-    "thumbnail": "/images/colouring book3.png"
+    "thumbnail": "/images/colouring book3.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "purple",
-    "thumbnail": "/images/colouring book1.png"
+    "thumbnail": "/images/colouring book1.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "red",
-    "thumbnail": "/images/colouring book2.png"
+    "thumbnail": "/images/colouring book2.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   },
   {
     "id": 9,
@@ -96,6 +104,7 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-1",
     "color": "green",
-    "thumbnail": "/images/colouring book3.png"
+    "thumbnail": "/images/colouring book3.png",
+    "pdf": "/Comic Book/Comic Book 1.pdf"
   }
 ]

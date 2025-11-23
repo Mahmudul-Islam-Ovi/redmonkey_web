@@ -3,56 +3,111 @@
     "id": 1,
     "name": "Animation",
     "title": "Animation",
-    "description": "Creating captivating animations that bring stories to life through motion and creativity.",
-    "image": "/images/thambalin.png"
+    "description": "Full-service 2D animation production for brands, NGOs, TV channels, and YouTube:",
+    "features": [
+      "Character animation",
+      "Educational animation",
+       "Kids series",
+      "TVCs & explainer videos",
+      "NGO/CSR awareness videos (your strong niche)"
+    ],
+    "image": "/images/service/1. Animation.jpg"
   },
   {
     "id": 2,
     "name": "Motion Graphic",
     "title": "Motion Graphic",
-    "description": "Designing dynamic motion graphics that enhance visual storytelling and engage audiences.",
-    "image": "/images/thambalin.png"
+    "description": "Clean, modern, professional motion graphics:",
+    "features": [
+      "Logo animation",
+      "Infographics",
+      "Corporate explainers",
+      "Social media motion posts"
+    ],
+    "image": "/images/service/2. Motion.jpg"
   },
   {
     "id": 3,
-    "name": "Illustration",
-    "title": "Illustration",
-    "description": "Crafting unique illustrations that communicate ideas and evoke emotions through art.",
-    "image": "/images/thambalin.png"
+    "name": " Storyboard ",
+    "title": " Storyboard & Pre-Production",
+    "description": "Professional pre-production support:",
+    "features": [
+      "Storyboard panels",
+      "Shot breakdown",
+      "Animatics",
+      "Script refinement",
+      "Episode planning"
+    ],
+    "image": "/images/service/3. Storyboard.jpg"
   },
   {
     "id": 4,
-    "name": "Character Design",
-    "title": "Character Design",
-    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
-    "image": "/images/thambalin.png"
+    "name": "Illustration",
+    "title": " Character Design & Illustration",
+    "description": "High-quality character design for:",
+    "features": [
+      "Series",
+      "Mascots",
+      "Campaign characters",
+      "Social media",
+      "Books & comics"
+    ],
+    "image": "/images/service/4. Illustration.jpg"
   },
   {
     "id": 5,
-    "name": "Character Design 2 ",
-    "title": "Character Design 2",
-    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
-    "image": "/images/thambalin.png"
+    "name": "Graphic Design",
+    "title": "Graphic Design",
+    "description": "Brand-supporting designs:",
+    "features": [
+      "Posters",
+      "Campaign visuals",
+      "Social media graphics",
+      "Flyers, banners",
+      "Pitch decks & presentations"
+    ],
+    "image": "/images/service/5. Graphic Design.jpg"
   },
   {
     "id": 6,
-    "name": "Character Design 3",
-    "title": "Character Design 3",
-    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
-    "image": "/images/thambalin.png"
+    "name": "Comics",
+    "title": "Comics & Children’s Content",
+    "description": "Your unique strength. Great for NGOs and brands:",
+    "features": [
+      "Kids comics",
+      "Educational comics",
+      "Printable worksheets",
+      "Storybooks",
+      "Coloring books (you already have 100+!)"
+    ],
+    "image": "/images/service/6. Comics & Children’s Content.jpg"
   },
   {
     "id": 7,
-    "name": "Character Design 4",
-    "title": "Character Design 4",
-    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
-    "image": "/images/thambalin.png"
+    "name": "YouTube Content",
+    "title": "YouTube Content Production",
+    "description": "End-to-end YouTube animation production:",
+    "features": [
+      "Kids content",
+      "Educational content",
+      "Series development",
+      "Thumbnail design",
+      "Channel branding"
+    ],
+    "image": "/images/service/7. YouTube Content Production.jpg"
   },
   {
     "id": 8,
-    "name": "Character Design 5",
-    "title": "Character Design 5",
-    "description": "Developing memorable character designs that resonate with audiences and enhance narratives.",
-    "image": "/images/thambalin.png"
+    "name": "Animation Consultation",
+    "title": "Animation Consultation",
+    "description": "You guide brands or creators on:",
+    "features": [
+      "Script improvement",
+      "Series development",
+      "Animation pipeline setup",
+      "Budget planning",
+      "Production workflow"
+    ],
+    "image": "/images/service/8. Animation Consultation.jpg"
   }
 ]

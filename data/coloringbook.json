@@ -8,8 +8,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "purple",
-    "thumbnail": "/images/colouring book1.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/1/Preview 2.jpg",
+    "pdf": "/Coloring Book/1/Fox Activity Book for Kids.pdf"
   },
   {
     "id": 2,
@@ -20,8 +20,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "red",
-    "thumbnail": "/images/colouring book2.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+     "thumbnail": "/Coloring Book/2/Preview 1.jpg",
+    "pdf": "/Coloring Book/2/Fox Coloring Pages for Kids.pdf"
   },
   {
     "id": 3,
@@ -32,8 +32,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-1",
     "color": "green",
-    "thumbnail": "/images/colouring book3.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/3/Preview 1.jpg",
+    "pdf": "/Coloring Book/3/Fox Dot Marker for Kids.pdf"
   },
   {
     "id": 4,
@@ -44,8 +44,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "purple",
-    "thumbnail": "/images/colouring book1.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/4/Preview 2.jpg",
+    "pdf": "/Coloring Book/4/Fox Dot to Dot for Kids.pdf"
   },
   {
     "id": 5,
@@ -56,8 +56,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "red",
-    "thumbnail": "/images/colouring book2.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/5/Preview 1.jpg",
+    "pdf": "/Coloring Book/5/Fox Drawing Skill for Kids.pdf"
   },
   {
     "id": 6,
@@ -68,8 +68,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-1",
     "color": "green",
-    "thumbnail": "/images/colouring book3.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/6/Preview 1.jpg",
+    "pdf": "/Coloring Book/6/How to Draw Fox for Kids.pdf"
   },
   {
     "id": 7,
@@ -80,8 +80,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "purple",
-    "thumbnail": "/images/colouring book1.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/7/Preview 2.jpg",
+    "pdf": "/Coloring Book/7/Fox Scissor Skill for Kids.pdf"
   },
   {
     "id": 8,
@@ -92,8 +92,8 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-2",
     "color": "red",
-    "thumbnail": "/images/colouring book2.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/8/Preview 2.jpg",
+    "pdf": "/Coloring Book/8/Donkey Activity Book for Kids.pdf"
   },
   {
     "id": 9,
@@ -104,7 +104,7 @@
     "format": "AI, EPS, PDF, JPEG, PNG",
     "volume": "VOL-1",
     "color": "green",
-    "thumbnail": "/images/colouring book3.png",
-    "pdf": "/Comic Book/Comic Book 1.pdf"
+    "thumbnail": "/Coloring Book/9/Preview 1.jpg",
+    "pdf": "/Coloring Book/9/Donkey Coloring Pages for Kids.pdf"
   }
 ]

@@ -14,10 +14,10 @@ export default function ComicBook() {
       </div>
 
       {/* Comic Books Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6">
         {comicBooks.map((comic, index) => (
           <Link href={`/comics-book/${comic.id}`} key={comic.id}>
-            <div className="group cursor-pointer h-full border bg-gray-800 border-gray-800  rounded-xl p-4">
+            <div className="group cursor-pointer h-full border bg-gray-800 border-gray-800  rounded-xl p-2">
               {/* Card Container */}
               <div className="relative h-96 rounded-lg overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2 bg-gray-900 border border-gray-800">
                 {/* Comic Image */}
@@ -25,7 +25,7 @@ export default function ComicBook() {
                   <img
                     src={comic.thumbnail}
                     alt={comic.title}
-                    className="w-full h-full object-full group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-fill group-hover:scale-105 transition-transform duration-500"
                   />
 
                   {/* Overlay on Hover */}

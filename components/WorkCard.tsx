@@ -67,7 +67,7 @@ export default function WorkCard({
             <img
               src={thumb}
               alt={title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-fill group-hover:scale-105 transition-transform duration-300"
             />
             {/* Overlay that appears on hover */}
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

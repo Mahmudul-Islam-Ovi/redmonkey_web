@@ -10,17 +10,17 @@ import Hero from "../components/Hero";
 export default function RootLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const isLoginPage = pathname === "/login";
-  const isContactPage = pathname === "/contact";
-  const isCartPage = pathname === "/cart";
-  const isShopPage = pathname === "/shop";
-
+  const isHeroPage =
+    pathname === "/cart" ||
+    pathname === "/contact" ||
+    pathname === "/shop" ||
+    pathname === "/comics" ||
+    pathname === "/about";
   return (
     <html lang="en">
       <body>
         {!isLoginPage && <Header />}
-        {!isLoginPage && !isContactPage && !isCartPage && !isShopPage && (
-          <Hero />
-        )}
+        {!isLoginPage && !isHeroPage && <Hero />}
         {children}
         {!isLoginPage && <Footer />}
       </body>

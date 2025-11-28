@@ -256,7 +256,7 @@ export default function ColoringBook() {
           >
             {/* Card Container */}
             <div
-              className={`relative h-96 rounded-lg overflow-hidden border-2 transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 ${
+              className={`relative  rounded-lg overflow-hidden border-2 transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 ${
                 colorClasses[book.color as keyof typeof colorClasses]
               }`}
             >

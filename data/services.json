@@ -42,6 +42,20 @@
   },
   {
     "id": 4,
+    "name": " Character Design ",
+    "title": " Character Design & Illustration",
+    "description": "Professional pre-production support:",
+    "features": [
+      "Storyboard panels",
+      "Shot breakdown",
+      "Animatics",
+      "Script refinement",
+      "Episode planning"
+    ],
+    "image": "https://i.ibb.co/QF09V6S0/4-Character-Design.jpg"
+  },
+  {
+    "id": 5,
     "name": "Illustration",
     "title": " Character Design & Illustration",
     "description": "High-quality character design for:",
@@ -52,10 +66,10 @@
       "Social media",
       "Books & comics"
     ],
-    "image": "https://i.ibb.co/v6Jnt2Ww/4-Illustration.jpg"
+    "image": "https://i.ibb.co/3mSfw4Pw/5-Illustration.jpg"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Graphic Design",
     "title": "Graphic Design",
     "description": "Brand-supporting designs:",
@@ -69,7 +83,7 @@
     "image": "https://i.ibb.co/C5n3KZMw/5-Graphic-Design.jpg"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Comics",
     "title": "Comics & Children’s Content",
     "description": "Your unique strength. Great for NGOs and brands:",
@@ -83,7 +97,7 @@
     "image": "https://i.ibb.co/LzKtNFM4/6-Comics-Children-s-Content.jpg"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "YouTube Content",
     "title": "YouTube Content Production",
     "description": "End-to-end YouTube animation production:",
@@ -97,7 +111,7 @@
     "image": "https://i.ibb.co/fz2V3qW2/7-You-Tube-Content-Production.jpg"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Animation Consultation",
     "title": "Animation Consultation",
     "description": "You guide brands or creators on:",

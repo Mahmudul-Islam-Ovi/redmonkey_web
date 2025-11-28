@@ -181,11 +181,11 @@ export default function Streaming() {
 
           return (
             <div className="card p-4" key={s.id}>
-              <div className="h-40 mb-3 rounded overflow-hidden">
+              <div className="mb-3 rounded overflow-hidden">
                 <img
                   src={thumb}
                   alt={s.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fill"
                 />
               </div>
               <h3 className="font-semibold">{s.title}</h3>

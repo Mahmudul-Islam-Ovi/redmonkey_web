@@ -15,7 +15,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     pathname === "/contact" ||
     pathname === "/shop" ||
     pathname === "/comics" ||
-    pathname === "/about";
+    pathname === "/about" ||
+    pathname === "/coloring-book";
   return (
     <html lang="en">
       <body>

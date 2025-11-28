@@ -18,11 +18,11 @@ export default function Services() {
           <Link href={`/services/${s.id}`} key={s.id}>
             <div className="group card h-full p-0 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-orange-600/20">
               {/* Image Container */}
-              <div className="h-48 overflow-hidden bg-gray-900 relative">
+              <div className="overflow-hidden bg-gray-900 relative">
                 <img
                   src={s.image}
                   alt={s.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-fill group-hover:scale-110 transition-transform duration-500"
                 />
                 {/* Overlay on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

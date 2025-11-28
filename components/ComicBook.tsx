@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import comicBooks from "../data/comicBooks.json";
+import Image from "next/image";
 
 export default function ComicBook() {
   return (
@@ -14,18 +15,21 @@ export default function ComicBook() {
       </div>
 
       {/* Comic Books Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  w-full h-full gap-20">
         {comicBooks.map((comic, index) => (
           <Link href={`/comics-book/${comic.id}`} key={comic.id}>
-            <div className="group cursor-pointer h-full border bg-gray-800 border-gray-800  rounded-xl p-2">
+            <div className="group cursor-pointer h-full border bg-gray-800 border-gray-800  rounded-xl p-1">
               {/* Card Container */}
-              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2 bg-gray-900 border border-gray-800">
+              <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2 bg-gray-900 border border-gray-800">
                 {/* Comic Image */}
-                <div className="relative h-full">
-                  <img
+                <div className="relative w-full h-full">
+                  <Image
                     src={comic.thumbnail}
                     alt={comic.title}
-                    className="w-full h-full object-fill group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    // sizes="100vw"
+                    // priority={true}
+                    className="object-fill w-full h-full group-hover:scale-105 transition-transform duration-500"
                   />
 
                   {/* Overlay on Hover */}

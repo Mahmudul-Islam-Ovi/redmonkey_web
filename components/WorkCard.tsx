@@ -61,7 +61,7 @@ export default function WorkCard({
 
   return (
     <article className="card group overflow-hidden">
-      <div className="relative h-44 overflow-hidden bg-gray-900">
+      <div className="relative  overflow-hidden bg-gray-900">
         {!playing ? (
           <>
             <img

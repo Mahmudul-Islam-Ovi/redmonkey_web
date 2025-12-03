@@ -123,10 +123,11 @@ export default function ShopPage() {
             {product.stockOut ? (
               // Option 1: Stock Out -> Show Wishlist Button
               <button
-                onClick={(e) => handleAddToWishlist(product.id, e)}
+                // onClick={(e) => handleAddToWishlist(product.id, e)}
                 className="bg-gray-400 text-black font-bold py-2 px-6 rounded hover:bg-gray-200 transition"
               >
-                Add to Wishlist
+                {/* Add to Wishlist */}
+                Not Avalible
               </button>
             ) : (
               // Option 2: In Stock -> Show Add to Cart Button
@@ -151,7 +152,7 @@ export default function ShopPage() {
         {/* Price Section */}
         <div className="p-4 pt-0">
           <p className="text-orange-500 font-bold text-xl">
-            ${product.price.toFixed(2)}
+            ৳ {product.price.toFixed(2)}
           </p>
         </div>
       </div>

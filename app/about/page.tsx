@@ -207,6 +207,115 @@ export default function page() {
           </div>
         </div>
 
+        {/* Our Team Section */}
+        <div className="mb-20">
+          <h2
+            className="text-4xl font-bold text-center mb-4"
+            style={{
+              opacity: isVisible ? 1 : 0,
+              animation: isVisible
+                ? "slideInDown 0.8s ease-out 0.5s forwards"
+                : "none",
+            }}
+          >
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-600">
+              Our Team
+            </span>
+          </h2>
+          <p
+            className="text-gray-400 text-center mb-12 max-w-2xl mx-auto"
+            style={{
+              opacity: isVisible ? 1 : 0,
+              animation: isVisible
+                ? "slideInDown 0.8s ease-out 0.6s forwards"
+                : "none",
+            }}
+          >
+            Meet the talented individuals who make Red Monkey a reality
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                id: 1,
+                name: "John Smith",
+                role: "Creative Director",
+                image: "/images/team/member1.jpg",
+                bio: "Leading creative vision with 10+ years of experience.",
+              },
+              {
+                id: 2,
+                name: "Sarah Johnson",
+                role: "Lead Animator",
+                image: "/images/team/member2.jpg",
+                bio: "Expert in 2D/3D animation and visual storytelling.",
+              },
+              {
+                id: 3,
+                name: "Mike Chen",
+                role: "Content Strategist",
+                image: "/images/team/member3.jpg",
+                bio: "Crafting compelling narratives and strategies.",
+              },
+              {
+                id: 4,
+                name: "Emily Davis",
+                role: "Senior Designer",
+                image: "/images/team/member4.jpg",
+                bio: "Designing beautiful digital experiences.",
+              },
+            ].map((member, idx) => (
+              <div
+                key={member.id}
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  animation: isVisible
+                    ? `slideInUp 0.8s ease-out ${0.7 + idx * 0.1}s forwards`
+                    : "none",
+                }}
+              >
+                <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden hover:border-orange-600/50 transition-all duration-300 group">
+                  {/* Image Container */}
+                  <div className="relative overflow-hidden aspect-square bg-gradient-to-br from-gray-700 to-gray-800">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-4xl font-bold group-hover:scale-110 transition-transform duration-300">
+                        {member.name.split(' ').map(n => n[0]).join('')}
+                      </div>
+                    </div>
+                    {/* Overlay on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                      {/* <div className="flex gap-4">
+                        <a href="#" className="w-8 h-8 bg-white/20 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors duration-300">
+                          <span className="text-white text-sm">in</span>
+                        </a>
+                        <a href="#" className="w-8 h-8 bg-white/20 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors duration-300">
+                          <span className="text-white text-sm">tw</span>
+                        </a>
+                        <a href="#" className="w-8 h-8 bg-white/20 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors duration-300">
+                          <span className="text-white text-sm">ig</span>
+                        </a>
+                      </div> */}
+                    </div>
+                  </div>
+
+                  {/* Info */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-white mb-1 group-hover:text-orange-500 transition-colors duration-300">
+                      {member.name}
+                    </h3>
+                    <p className="text-orange-500 font-semibold mb-3 text-sm">
+                      {member.role}
+                    </p>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                      {member.bio}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Team Section */}
         <div className="mb-20">
           <h2

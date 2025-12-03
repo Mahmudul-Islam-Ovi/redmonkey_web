@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "role": "Creative Director",
+        "image": "/images/team/member1.jpg",
+        "bio": "Leading creative vision with 10+ years of experience in digital content creation.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Sarah Johnson",
+        "role": "Lead Animator",
+        "image": "/images/team/member2.jpg",
+        "bio": "Expert in 2D/3D animation, bringing stories to life through stunning visuals.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Mike Chen",
+        "role": "Content Strategist",
+        "image": "/images/team/member3.jpg",
+        "bio": "Crafting compelling narratives and content strategies for maximum engagement.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Emily Davis",
+        "role": "Senior Designer",
+        "image": "/images/team/member4.jpg",
+        "bio": "Designing beautiful and intuitive digital experiences that users love.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    }
+]

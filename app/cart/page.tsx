@@ -44,6 +44,7 @@ export default function CartPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [showRemoveAllConfirm, setShowRemoveAllConfirm] = useState(false);
   const [itemToRemoveId, setItemToRemoveId] = useState<number | null>(null);
+  const [deliveryLocation, setDeliveryLocation] = useState<"inside" | "outside">("inside");
 
   // New state for Toast
   const [showToast, setShowToast] = useState(false);
@@ -52,7 +53,11 @@ export default function CartPage() {
   useEffect(() => {
     // Note: Type assertion to CartItem[] is safe here since we control the storage/parsing
     const cart = JSON.parse(localStorage.getItem("cart") || "[]") as CartItem[];
+    const savedLocation = localStorage.getItem("deliveryLocation") as "inside" | "outside" | null;
     setCartItems(cart);
+    if (savedLocation) {
+      setDeliveryLocation(savedLocation);
+    }
     setIsLoading(false);
   }, []);
 
@@ -124,8 +129,13 @@ export default function CartPage() {
     (total, item) => total + item.price * item.quantity,
     0
   );
-  const tax = subtotal * 0.1;
-  const total = subtotal + tax;
+  const deliveryCharge = deliveryLocation === "inside" ? 60 : 100;
+  const total = subtotal + deliveryCharge;
+
+  const handleDeliveryLocationChange = (location: "inside" | "outside") => {
+    setDeliveryLocation(location);
+    localStorage.setItem("deliveryLocation", location);
+  };
 
   if (isLoading) {
     return (
@@ -224,7 +234,7 @@ export default function CartPage() {
                       </Link>
                       <p className="text-gray-400 mb-2">{item.clientName}</p>
                       <p className="text-orange-500 font-semibold mb-4">
-                        ${item.price.toFixed(2)} each
+                        ৳ {item.price.toFixed(2)} each
                       </p>
 
                       {/* Quantity Controls */}
@@ -254,7 +264,7 @@ export default function CartPage() {
                     {/* Item Total & Remove */}
                     <div className="text-right">
                       <p className="text-white font-bold text-lg mb-4">
-                        ${(item.price * item.quantity).toFixed(2)}
+                        ৳ {(item.price * item.quantity).toFixed(2)}
                       </p>
                       <button
                         onClick={() => handleRemoveItemClick(item.id)} // Use confirmation handler
@@ -278,22 +288,53 @@ export default function CartPage() {
                 <div className="space-y-4 mb-6 border-b border-gray-700 pb-6">
                   <div className="flex justify-between text-gray-400">
                     <span>Subtotal</span>
-                    <span>${subtotal.toFixed(2)}</span>
-                  </div>
-                  <div className="flex justify-between text-gray-400">
-                    <span>Tax (10%)</span>
-                    <span>${tax.toFixed(2)}</span>
+                    <span>৳ {subtotal.toFixed(2)}</span>
                   </div>
                 </div>
 
-                <div className="flex justify-between text-white font-bold text-xl mb-6">
+                {/* Delivery Location Selection */}
+                <div className="mb-6">
+                  <h3 className="text-white font-semibold mb-3">Delivery Location</h3>
+                  <div className="space-y-2">
+                    <label className="flex items-center justify-between p-3 bg-gray-800 rounded-lg cursor-pointer border-2 transition hover:border-gray-600" style={{ borderColor: deliveryLocation === "inside" ? "#ff7a18" : "transparent" }}>
+                      <div className="flex items-center gap-3">
+                        <input
+                          type="radio"
+                          name="delivery"
+                          value="inside"
+                          checked={deliveryLocation === "inside"}
+                          onChange={() => handleDeliveryLocationChange("inside")}
+                          className="w-4 h-4 text-orange-600"
+                        />
+                        <span className="text-white">Inside Dhaka</span>
+                      </div>
+                      <span className="text-orange-500 font-semibold">৳ 60</span>
+                    </label>
+                    <label className="flex items-center justify-between p-3 bg-gray-800 rounded-lg cursor-pointer border-2 transition hover:border-gray-600" style={{ borderColor: deliveryLocation === "outside" ? "#ff7a18" : "transparent" }}>
+                      <div className="flex items-center gap-3">
+                        <input
+                          type="radio"
+                          name="delivery"
+                          value="outside"
+                          checked={deliveryLocation === "outside"}
+                          onChange={() => handleDeliveryLocationChange("outside")}
+                          className="w-4 h-4 text-orange-600"
+                        />
+                        <span className="text-white">Outside Dhaka</span>
+                      </div>
+                      <span className="text-orange-500 font-semibold">৳ 100</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div className="flex justify-between text-white font-bold text-xl mb-6 pt-4 border-t border-gray-700">
                   <span>Total</span>
-                  <span className="text-orange-500">${total.toFixed(2)}</span>
+                  <span className="text-orange-500">৳ {total.toFixed(2)}</span>
                 </div>
 
-                <button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition mb-4">
+                <Link href="/checkout/payment" className="block w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition mb-4 text-center">
                   Proceed to Checkout
-                </button>
+                </Link>
 
                 <Link
                   href="/shop"
@@ -304,7 +345,7 @@ export default function CartPage() {
 
                 <div className="mt-8 pt-8 border-t border-gray-700">
                   <p className="text-gray-500 text-sm mb-3">
-                    ✓ Free shipping on orders over $100
+                    ✓ Free shipping on orders over ৳100
                   </p>
                   <p className="text-gray-500 text-sm mb-3">
                     ✓ 30-day money back guarantee

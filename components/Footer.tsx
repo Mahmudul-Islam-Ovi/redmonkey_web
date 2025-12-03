@@ -115,14 +115,14 @@ const Footer = () => {
                   Privacy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/refunds"
                   className="text-gray-400 hover:text-orange-600 text-sm transition"
                 >
                   Refunds
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

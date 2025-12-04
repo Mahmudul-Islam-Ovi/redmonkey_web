@@ -1,12 +1,28 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import teamData from "@/data/team.json";
+
+interface TeamMember {
+  id: number;
+  name: string;
+  role: string;
+  image: string;
+  bio: string;
+  social: {
+    linkedin: string;
+    twitter: string;
+    instagram: string;
+  };
+}
 
 export default function page() {
   const [isVisible, setIsVisible] = useState(false);
+  const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
 
   useEffect(() => {
     setIsVisible(true);
+    setTeamMembers(teamData);
   }, []);
 
   return (
@@ -235,36 +251,7 @@ export default function page() {
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                id: 1,
-                name: "John Smith",
-                role: "Creative Director",
-                image: "/images/team/member1.jpg",
-                bio: "Leading creative vision with 10+ years of experience.",
-              },
-              {
-                id: 2,
-                name: "Sarah Johnson",
-                role: "Lead Animator",
-                image: "/images/team/member2.jpg",
-                bio: "Expert in 2D/3D animation and visual storytelling.",
-              },
-              {
-                id: 3,
-                name: "Mike Chen",
-                role: "Content Strategist",
-                image: "/images/team/member3.jpg",
-                bio: "Crafting compelling narratives and strategies.",
-              },
-              {
-                id: 4,
-                name: "Emily Davis",
-                role: "Senior Designer",
-                image: "/images/team/member4.jpg",
-                bio: "Designing beautiful digital experiences.",
-              },
-            ].map((member, idx) => (
+            {teamMembers.map((member, idx) => (
               <div
                 key={member.id}
                 style={{

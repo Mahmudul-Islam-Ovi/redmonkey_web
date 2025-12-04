@@ -1,6 +1,71 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const page = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    projectType: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully. We'll get back to you soon!",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          projectType: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || "Failed to send message. Please try again.",
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "An error occurred. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12">
@@ -39,35 +104,71 @@ const page = () => {
         </div>
 
         {/* Right Side - Contact Form */}
-        <form className="bg-gray-900 rounded-lg p-6 md:p-8">
+        <form onSubmit={handleSubmit} className="bg-gray-900 rounded-lg p-6 md:p-8">
           <div className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Name"
+                required
                 className="bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-600 transition"
               />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Email"
+                required
                 className="bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-600 transition"
               />
             </div>
             <input
               type="text"
+              name="projectType"
+              value={formData.projectType}
+              onChange={handleChange}
               placeholder="Project type (e.g., TVC, Series, NGO film)"
+              required
               className="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-600 transition"
             />
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Brief / requirements"
               rows={5}
+              required
               className="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-600 transition resize-none"
             />
-            <button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded transition">
-              Send
+
+            {/* Status Messages */}
+            {submitStatus.type && (
+              <div
+                className={`p-4 rounded-lg ${submitStatus.type === "success"
+                    ? "bg-green-900/30 border border-green-600 text-green-400"
+                    : "bg-red-900/30 border border-red-600 text-red-400"
+                  }`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
+
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className={`w-full font-bold py-3 rounded transition transform ${isSubmitting
+                  ? "bg-gray-600 cursor-not-allowed"
+                  : "bg-orange-600 hover:bg-orange-700 hover:scale-105"
+                } text-white`}
+            >
+              {isSubmitting ? "Sending..." : "Send"}
             </button>
             <p className="text-xs text-gray-400 text-center">
-              By submitting you agree to our Terms & Privacy.
+              By submitting you agree to our Terms &amp; Privacy.
             </p>
           </div>
         </form>

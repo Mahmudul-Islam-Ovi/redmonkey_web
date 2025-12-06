@@ -118,8 +118,8 @@ export default function ShopPage() {
             )}
           </div>
 
-          {/* Overlay with Conditional Button */}
-          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+          {/* Overlay with Conditional Button - Desktop Only */}
+          <div className="hidden md:flex absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 items-center justify-center">
             {product.stockOut ? (
               // Option 1: Stock Out -> Show Wishlist Button
               <button
@@ -154,6 +154,24 @@ export default function ShopPage() {
           <p className="text-orange-500 font-bold text-xl">
             ৳ {product.price.toFixed(2)}
           </p>
+        </div>
+
+        {/* Mobile Add to Cart Button - Shown only on mobile */}
+        <div className="md:hidden p-4 pt-0">
+          {product.stockOut ? (
+            <button
+              className="w-full bg-gray-400 text-black font-bold py-3 px-6 rounded hover:bg-gray-300 transition"
+            >
+              Not Available
+            </button>
+          ) : (
+            <button
+              onClick={(e) => handleAddToCart(product.id, e)}
+              className="w-full bg-orange-600 text-white font-bold py-3 px-6 rounded hover:bg-orange-700 transition"
+            >
+              Add to Cart
+            </button>
+          )}
         </div>
       </div>
     </Link>

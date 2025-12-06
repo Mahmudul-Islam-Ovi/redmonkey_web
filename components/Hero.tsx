@@ -91,7 +91,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 w-full">
           <div className="card overflow-hidden shadow-2xl aspect-video">
             <iframe
               width="560"

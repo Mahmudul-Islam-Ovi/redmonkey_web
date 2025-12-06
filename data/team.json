@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "name": "John Johnson",
-        "role": "Creative Director",
-        "image": "/images/team/member1.jpg",
+        "name": "Nipun Kundu",
+        "role": "Founder",
+        "image": "/images/team/Nipun Kundu.jpg",
         "bio": "Leading creative vision with 10+ years of experience in digital content creation.",
         "social": {
             "linkedin": "#",
@@ -13,9 +13,9 @@
     },
     {
         "id": 2,
-        "name": "Sarah Johnson",
-        "role": "Lead Animator",
-        "image": "/images/team/member2.jpg",
+        "name": "Gouranga Bairagi",
+        "role": "Animator Supervisor",
+        "image": "/images/team/Gourango.jpg",
         "bio": "Expert in 2D/3D animation, bringing stories to life through stunning visuals.",
         "social": {
             "linkedin": "#",
@@ -25,9 +25,9 @@
     },
     {
         "id": 3,
-        "name": "Mike Chen",
-        "role": "Content Strategist",
-        "image": "/images/team/member3.jpg",
+        "name": "Manosh Kundu",
+        "role": "Animator",
+        "image": "/images/team/Manosh.jpg",
         "bio": "Crafting compelling narratives and content strategies for maximum engagement.",
         "social": {
             "linkedin": "#",
@@ -37,9 +37,57 @@
     },
     {
         "id": 4,
-        "name": "Emily Davis",
-        "role": "Senior Designer",
-        "image": "/images/team/member4.jpg",
+        "name": "MD Nazmul Hasan",
+        "role": "Animator & 3D Artist",
+        "image": "/images/team/Nazmul Hasan.jpg",
+        "bio": "Designing beautiful and intuitive digital experiences that users love.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Julian Bawn",
+        "role": "Animator",
+        "image": "/images/team/Julian.jpg",
+        "bio": "Designing beautiful and intuitive digital experiences that users love.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Soikat Hossain",
+        "role": "Background Artist",
+        "image": "/images/team/Soikat.jpg",
+        "bio": "Designing beautiful and intuitive digital experiences that users love.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Kushol Mondal",
+        "role": "Script Writer",
+        "image": "/images/team/Kushol.jpg",
+        "bio": "Designing beautiful and intuitive digital experiences that users love.",
+        "social": {
+            "linkedin": "#",
+            "twitter": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Sagar Mistry",
+        "role": "Script Writer",
+        "image": "/images/team/Sagor .jpg",
         "bio": "Designing beautiful and intuitive digital experiences that users love.",
         "social": {
             "linkedin": "#",

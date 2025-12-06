@@ -6,6 +6,7 @@ const page = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     projectType: "",
     message: "",
   });
@@ -47,6 +48,7 @@ const page = () => {
         setFormData({
           name: "",
           email: "",
+          phone: "",
           projectType: "",
           message: "",
         });
@@ -81,10 +83,10 @@ const page = () => {
             <div className="flex items-center gap-3 text-gray-300 text-sm md:text-base">
               <span className="text-orange-600">✉</span>
               <a
-                href="mailto:nipunkundu111@gmail.com"
+                href="mailto:info.studioredmonkey@gmail.com"
                 className="hover:text-orange-600 transition"
               >
-                nipunkundu111@gmail.com
+                info.studioredmonkey@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-3 text-gray-300 text-sm md:text-base">
@@ -127,6 +129,17 @@ const page = () => {
               />
             </div>
             <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              required
+              pattern="[0-9]{11}"
+              title="Please enter a valid 11-digit phone number"
+              className="w-full bg-gray-800 border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-600 transition"
+            />
+            <input
               type="text"
               name="projectType"
               value={formData.projectType}
@@ -149,8 +162,8 @@ const page = () => {
             {submitStatus.type && (
               <div
                 className={`p-4 rounded-lg ${submitStatus.type === "success"
-                    ? "bg-green-900/30 border border-green-600 text-green-400"
-                    : "bg-red-900/30 border border-red-600 text-red-400"
+                  ? "bg-green-900/30 border border-green-600 text-green-400"
+                  : "bg-red-900/30 border border-red-600 text-red-400"
                   }`}
               >
                 {submitStatus.message}
@@ -161,8 +174,8 @@ const page = () => {
               type="submit"
               disabled={isSubmitting}
               className={`w-full font-bold py-3 rounded transition transform ${isSubmitting
-                  ? "bg-gray-600 cursor-not-allowed"
-                  : "bg-orange-600 hover:bg-orange-700 hover:scale-105"
+                ? "bg-gray-600 cursor-not-allowed"
+                : "bg-orange-600 hover:bg-orange-700 hover:scale-105"
                 } text-white`}
             >
               {isSubmitting ? "Sending..." : "Send"}

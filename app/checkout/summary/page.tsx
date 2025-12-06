@@ -43,14 +43,37 @@ export default function SummaryPage() {
         }
     }, [router]);
 
-    const handleSubmitOrder = () => {
+    const handleSubmitOrder = async () => {
         setIsSubmitting(true);
 
-        // Simulate order submission
-        setTimeout(() => {
+        try {
+            const response = await fetch("/api/send-order", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    cartItems,
+                    paymentDetails,
+                    subtotal,
+                    deliveryCharge,
+                    total,
+                }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setShowSuccessDialog(true);
+            } else {
+                alert(data.error || "Failed to submit order. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting order:", error);
+            alert("An error occurred while submitting your order. Please try again.");
+        } finally {
             setIsSubmitting(false);
-            setShowSuccessDialog(true);
-        }, 1500);
+        }
     };
 
     const handleCloseSuccessDialog = () => {

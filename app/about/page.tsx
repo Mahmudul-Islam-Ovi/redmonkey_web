@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import teamData from "@/data/team.json";
 
 interface TeamMember {
@@ -250,7 +251,7 @@ export default function page() {
             Meet the talented individuals who make Red Monkey a reality
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, idx) => (
               <div
                 key={member.id}
@@ -264,11 +265,12 @@ export default function page() {
                 <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden hover:border-orange-600/50 transition-all duration-300 group">
                   {/* Image Container */}
                   <div className="relative overflow-hidden aspect-square bg-gradient-to-br from-gray-700 to-gray-800">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-4xl font-bold group-hover:scale-110 transition-transform duration-300">
-                        {member.name.split(' ').map(n => n[0]).join('')}
-                      </div>
-                    </div>
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-fill group-hover:scale-110 transition-transform duration-300"
+                    />
                     {/* Overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
                       {/* <div className="flex gap-4">
@@ -293,9 +295,9 @@ export default function page() {
                     <p className="text-orange-500 font-semibold mb-3 text-sm">
                       {member.role}
                     </p>
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    {/* <p className="text-gray-400 text-sm leading-relaxed">
                       {member.bio}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>

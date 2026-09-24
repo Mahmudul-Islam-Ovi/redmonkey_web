@@ -17,7 +17,7 @@ export default function Header() {
       const cart = JSON.parse(localStorage.getItem("cart") || "[]");
       const count = cart.reduce(
         (total: number, item: any) => total + item.quantity,
-        0
+        0,
       );
       setCartCount(count);
     };
